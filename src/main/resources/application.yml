@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/hee_coffee
+    username: root
+    password: 2412
+
+jwt:
+  secret: Hee24129949Hee24129949Hee24129949Hee24129949Hee24129949Hee24129949Hee
+  expiration: 8640000
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+
+payment:
+  bank:
+    bankCode: TCB
+    accountNo: 19036779039019
+    accountName: TRUONG NGUYEN GIA HUY
