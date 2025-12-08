@@ -27,10 +27,8 @@ public class SecurityConfig {
         http
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/user/login").permitAll()
-                        .requestMatchers("/api/user/register").permitAll()
-                        .requestMatchers("/api/user/me").permitAll()
-                        .requestMatchers("/api/user/count").permitAll()
+                        .requestMatchers("/api/user/**").permitAll()
+
                         .requestMatchers("/api/product/**",
                                 "/api/type/**").permitAll()
                         .requestMatchers("/cart/**").permitAll()
